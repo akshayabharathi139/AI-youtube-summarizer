@@ -10,6 +10,8 @@
 
 
 
+
+
 🛠️ Technologies Used
 Python
 
@@ -35,3 +37,69 @@ Groq API provides blazing-fast inference using Meta's LLaMA 3 models.
 LLaMA 3 is a state-of-the-art large language model capable of summarization, content generation, keyword extraction, and structured formatting.
 
 With Groq's high-speed, low-latency infrastructure, responses are almost real-time, which is perfect for live web apps like Streamlit.
+
+
+
+
+
+
+📦 requirements.txt
+txt
+Copy
+Edit
+streamlit==1.35.0
+requests==2.31.0
+google-api-python-client==2.127.0
+textblob==0.18.0
+python-dotenv==1.0.1
+
+
+
+
+
+
+
+
+
+📘 Commands to Add in README.md
+md
+Copy
+Edit
+## 🚀 How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/youtube-summarizer-groq.git
+cd youtube-summarizer-groq
+2. Create and Activate a Virtual Environment
+bash
+Copy
+Edit
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+3. Install Requirements
+bash
+Copy
+Edit
+pip install -r requirements.txt
+4. Set Up Environment Variables
+Create a .env file in the root directory and add:
+
+env
+Copy
+Edit
+GROQ_API_KEY=your_groq_api_key_here
+YOUTUBE_API_KEY=your_youtube_data_api_key_here
+🛡️ Never share your .env or commit it to version control!
+
+5. Run the Streamlit App
+bash
+Copy
+Edit
+streamlit run app.py
